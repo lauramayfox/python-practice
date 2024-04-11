@@ -51,7 +51,7 @@ def get_player_name():
         if name.isalpha():
             return name
         else:
-            print("You can only use letters, please try again")
+            print("Not a valid input, please try again")
 
 
 def view_scoreboard(player):
@@ -68,10 +68,10 @@ def view_scoreboard(player):
             time.sleep(1)
             break
         elif view_scoreboard == "n":
-            print("\nContinue to game...")
-            start_game(player)
+            break
+            main()
         else:
-            print("\nPlease answer y or n: \n")
+            print("\nNot a valid input. Please answer y or n: \n")
 
 
 def start_game(player):
@@ -87,7 +87,7 @@ def start_game(player):
             time.sleep(1)
             break
         elif start_answer == "n":
-            print("\033[31m" + "\nSee you on the next roll")
+            print("\033[31m" + "\nSee you on the next roll!")
             quit()
         else:
             print("\nPlease answer y or n: \n")
