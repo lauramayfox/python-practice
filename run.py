@@ -55,7 +55,7 @@ def view_scoreboard(player):
         view_scoreboard = input("Would you like to view previous highest score? y or n: ")
 
         if view_scoreboard == "y":
-            print(player, load_high_score())
+            print("Your highest score is:", load_high_score())
             time.sleep(1)
             break
         elif view_scoreboard == "n":
